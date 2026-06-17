@@ -48,7 +48,7 @@ Tiến hành cài đặt theo hướng dẫn của trình cài đặt.
 
 ### Kết quả
 
-![Cài đặt Postman](images/postman-home.png)
+<img width="1920" height="953" alt="postman" src="https://github.com/user-attachments/assets/b0335dfe-018c-493c-8930-f52f4ca7f330" />)
 
 ---
 
