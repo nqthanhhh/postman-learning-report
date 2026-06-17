@@ -1,3 +1,4 @@
+<img width="1584" height="940" alt="connect" src="https://github.com/user-attachments/assets/e36415c7-b11c-46d1-bbc4-cdfc0c9a1db6" />
 # BÁO CÁO TÌM HIỂU CÔNG CỤ POSTMAN
 
 ## 1. Thông tin sinh viên
@@ -58,7 +59,7 @@ Tạo Collection có tên **Postman Learning** để quản lý các API đã ki
 
 ### Kết quả
 
-![Collection](images/collection.png)
+<img width="1584" height="940" alt="connect" src="https://github.com/user-attachments/assets/e70c1fb6-e8d8-4367-b5cc-bd1a18268390" />
 
 ---
 
@@ -80,7 +81,7 @@ https://jsonplaceholder.typicode.com/posts/1
 
 Server trả về dữ liệu JSON của bài viết có ID = 1.
 
-![GET Request](images/get-post-1.png)
+<img width="1552" height="927" alt="get" src="https://github.com/user-attachments/assets/b5002f53-7b44-4320-9c34-a6c0128db3bf" />
 
 ---
 
@@ -106,7 +107,7 @@ https://jsonplaceholder.typicode.com/posts
 
 Server trả về dữ liệu đã được tạo mới.
 
-![POST Request](images/post-create.png)
+<img width="1579" height="933" alt="post" src="https://github.com/user-attachments/assets/9966931c-cf52-4605-b9bf-24b711e1685b" />
 
 ---
 
@@ -133,7 +134,7 @@ https://jsonplaceholder.typicode.com/posts/1
 
 Server trả về dữ liệu đã được cập nhật.
 
-![PUT Request](images/put-update.png)
+<img width="1563" height="941" alt="put" src="https://github.com/user-attachments/assets/2792d7ad-706a-4200-b7f2-6226f3228a10" />
 
 ---
 
@@ -155,7 +156,7 @@ https://jsonplaceholder.typicode.com/posts/1
 
 Server trả về mã trạng thái thành công.
 
-![DELETE Request](images/delete-post.png)
+<img width="1581" height="944" alt="delete" src="https://github.com/user-attachments/assets/4edda354-e0cc-4033-be7e-3d500ef7458d" />
 
 ---
 
