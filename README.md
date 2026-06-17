@@ -1,4 +1,3 @@
-<img width="1584" height="940" alt="connect" src="https://github.com/user-attachments/assets/e36415c7-b11c-46d1-bbc4-cdfc0c9a1db6" />
 # BÁO CÁO TÌM HIỂU CÔNG CỤ POSTMAN
 
 ## 1. Thông tin sinh viên
