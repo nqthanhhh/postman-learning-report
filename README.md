@@ -173,7 +173,7 @@ pm.test("Status code is 200", function () {
 
 Kiểm thử thành công.
 
-![Test Result](images/test-script.png)
+<img width="1572" height="922" alt="test-scrip" src="https://github.com/user-attachments/assets/377f2dc7-be21-4478-8a78-54a121423365" />
 
 ---
 
