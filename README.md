@@ -96,9 +96,7 @@ https://jsonplaceholder.typicode.com/posts
 
 ```json
 {
-  "title": "Postman Test",
-  "body": "Hello API",
-  "userId": 1
+    "id": 101
 }
 ```
 
@@ -122,10 +120,7 @@ https://jsonplaceholder.typicode.com/posts/1
 
 ```json
 {
-  "id": 1,
-  "title": "Updated Post",
-  "body": "Updated content",
-  "userId": 1
+    "id": 1
 }
 ```
 
