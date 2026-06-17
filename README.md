@@ -220,8 +220,8 @@ Qua bài thực hành, em nhận thấy Postman là một công cụ mạnh mẽ
 
 ## 14. Link GitHub Repository
 
-Điền liên kết repository GitHub của bạn tại đây:
+
 
 ```text
-https://github.com/ten-tai-khoan/ten-repository
+[https://github.com/ten-tai-khoan/ten-repository](https://github.com/nqthanhhh/postman-learning-report.git)
 ```
