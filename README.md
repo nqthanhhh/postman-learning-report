@@ -2,22 +2,23 @@
 
 ## 1. Thông tin sinh viên
 
-* Họ và tên: Nguyễn Quốc Thành
-* MSSV: 23010038
+* **Họ và tên:** Nguyễn Quốc Thành
+* **MSSV:** 23010038
 
 ---
 
 ## 2. Giới thiệu Postman
 
-Postman là một công cụ hỗ trợ kiểm thử API phổ biến, cho phép lập trình viên gửi các HTTP Request và kiểm tra phản hồi từ server.
+Postman là công cụ hỗ trợ phát triển và kiểm thử API phổ biến, cho phép người dùng gửi các HTTP Request và kiểm tra phản hồi từ máy chủ một cách trực quan.
 
-Các tính năng chính:
+### Các tính năng chính
 
-* Gửi HTTP Request (GET, POST, PUT, DELETE...)
+* Gửi HTTP Request (GET, POST, PUT, DELETE, PATCH...)
 * Kiểm thử API
 * Quản lý Collection
 * Tự động hóa kiểm thử bằng Test Script
 * Hỗ trợ làm việc nhóm
+* Xuất và chia sẻ tài liệu API
 
 ---
 
@@ -25,7 +26,7 @@ Các tính năng chính:
 
 ### Video hướng dẫn
 
-https://www.youtube.com/watch?v=MFxk5BZulVU
+* https://www.youtube.com/watch?v=MFxk5BZulVU
 
 ### Tài liệu khác
 
@@ -39,43 +40,57 @@ https://www.youtube.com/watch?v=MFxk5BZulVU
 
 ### Bước 1: Tải Postman
 
-Truy cập trang chủ Postman và tải phần mềm.
+Truy cập trang chủ Postman và tải phần mềm theo hệ điều hành đang sử dụng.
 
 ### Bước 2: Cài đặt
 
-Tiến hành cài đặt theo hướng dẫn.
+Tiến hành cài đặt theo hướng dẫn của trình cài đặt.
 
 ### Kết quả
 
-![Cài đặt Postman](images/postman-install.png)
+![Cài đặt Postman](images/postman-home.png)
 
 ---
 
-## 5. Thực hành gửi GET Request
+## 5. Tạo Collection
+
+Tạo Collection có tên **Postman Learning** để quản lý các API đã kiểm thử.
+
+### Kết quả
+
+![Collection](images/collection.png)
+
+---
+
+## 6. Thực hành gửi GET Request
 
 ### API sử dụng
 
+```text
 https://jsonplaceholder.typicode.com/posts/1
+```
 
 ### Thực hiện
 
-* Chọn phương thức GET
-* Nhập URL API
-* Nhấn Send
+* Chọn phương thức GET.
+* Nhập URL API.
+* Nhấn **Send**.
 
 ### Kết quả
 
-![GET Request](images/get-request.png)
+Server trả về dữ liệu JSON của bài viết có ID = 1.
 
-Nhận được dữ liệu JSON trả về từ server.
+![GET Request](images/get-post-1.png)
 
 ---
 
-## 6. Thực hành gửi POST Request
+## 7. Thực hành gửi POST Request
 
 ### API sử dụng
 
+```text
 https://jsonplaceholder.typicode.com/posts
+```
 
 ### Body
 
@@ -89,25 +104,64 @@ https://jsonplaceholder.typicode.com/posts
 
 ### Kết quả
 
-![POST Request](images/post-request.png)
-
 Server trả về dữ liệu đã được tạo mới.
+
+![POST Request](images/post-create.png)
 
 ---
 
-## 7. Tạo Collection
+## 8. Thực hành gửi PUT Request
 
-Tạo Collection để quản lý các API đã kiểm thử.
+### API sử dụng
+
+```text
+https://jsonplaceholder.typicode.com/posts/1
+```
+
+### Body
+
+```json
+{
+  "id": 1,
+  "title": "Updated Post",
+  "body": "Updated content",
+  "userId": 1
+}
+```
 
 ### Kết quả
 
-![Collection](images/collection.png)
+Server trả về dữ liệu đã được cập nhật.
+
+![PUT Request](images/put-update.png)
 
 ---
 
-## 8. Viết Test Script
+## 9. Thực hành gửi DELETE Request
 
-Ví dụ:
+### API sử dụng
+
+```text
+https://jsonplaceholder.typicode.com/posts/1
+```
+
+### Thực hiện
+
+* Chọn phương thức DELETE.
+* Nhập URL API.
+* Nhấn **Send**.
+
+### Kết quả
+
+Server trả về mã trạng thái thành công.
+
+![DELETE Request](images/delete-post.png)
+
+---
+
+## 10. Viết Test Script
+
+Ví dụ kiểm tra mã trạng thái phản hồi:
 
 ```javascript
 pm.test("Status code is 200", function () {
@@ -117,13 +171,27 @@ pm.test("Status code is 200", function () {
 
 ### Kết quả
 
-![Test Result](images/test-result.png)
-
 Kiểm thử thành công.
+
+![Test Result](images/test-script.png)
 
 ---
 
-## 9. Nhận xét
+## 11. Xuất Collection
+
+Sau khi hoàn thành các API, Collection được xuất dưới định dạng **Collection v2.1** để chia sẻ và tái sử dụng.
+
+### Kết quả
+
+File xuất:
+
+```text
+postman_collection.json
+```
+
+---
+
+## 12. Nhận xét
 
 ### Ưu điểm
 
@@ -131,14 +199,34 @@ Kiểm thử thành công.
 * Hỗ trợ nhiều loại API.
 * Dễ dàng quản lý Collection.
 * Hỗ trợ viết Test Script.
+* Tích hợp tốt với nhiều công cụ khác.
 
 ### Nhược điểm
 
-* Một số tính năng nâng cao yêu cầu tài khoản.
+* Một số tính năng nâng cao yêu cầu tài khoản trả phí.
 * Có thể tiêu tốn tài nguyên máy khi chạy nhiều Collection.
+* Cần thời gian làm quen với các tính năng nâng cao.
 
 ---
 
-## 10. Kết luận
+## 13. Kết luận
 
-Sau khi tìm hiểu và thực hành, em đã nắm được các thao tác cơ bản trên Postman như gửi Request, kiểm tra Response, tạo Collection và viết Test Script để kiểm thử API.
+Sau khi tìm hiểu và thực hành, em đã nắm được các thao tác cơ bản trên Postman như:
+
+* Gửi các phương thức HTTP: GET, POST, PUT và DELETE.
+* Kiểm tra Response và Status Code.
+* Tạo và quản lý Collection.
+* Viết Test Script để kiểm thử API.
+* Xuất Collection để chia sẻ và tái sử dụng.
+
+Qua bài thực hành, em nhận thấy Postman là một công cụ mạnh mẽ, hỗ trợ hiệu quả trong quá trình phát triển và kiểm thử API.
+
+---
+
+## 14. Link GitHub Repository
+
+Điền liên kết repository GitHub của bạn tại đây:
+
+```text
+https://github.com/ten-tai-khoan/ten-repository
+```
